@@ -297,8 +297,8 @@ body textarea:required:valid
 
 
 .accordion
-	background-color: #eee
-	color: #444
+	background-color: $main-color
+	color: #FFFFFF
 	cursor: pointer
 	padding: 18px
 	width: 100%
@@ -308,13 +308,20 @@ body textarea:required:valid
 	transition: 0.4s
 
 .active, .accordion:hover
-	background-color: #ccc
+	background-color: lighten($main-color,10%)
 
 .panel
 	padding: 0 18px
 	background-color: white
 	display: none
 	overflow: hidden
+
+.accordion:after
+	content: '\02795'
+	font-size: 13px
+	color: #FFFFFF
+	float: right
+	margin-left: 5px
 
 
 //ALWAYS END
